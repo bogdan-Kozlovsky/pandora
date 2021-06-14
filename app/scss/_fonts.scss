@@ -1,0 +1,68 @@
+// FuturaNew
+@font-face {
+  font-family: "FuturaNewLight";
+  font-weight: 300;
+  font-style: normal;
+  src: local("FuturaNewBookLight"), url("../fonts/FuturaNewLight.woff2") format("woff2"),
+    url("../fonts/FuturaNewLight.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaNew-Reg";
+  font-weight: 400;
+  font-style: normal;
+  src: local("FuturaNewBook-Reg"), url("../fonts/FuturaNewBook-Reg.woff2") format("woff2"),
+    url("../fonts/FuturaNewBook-Reg.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaNewMedium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("FuturaNewBookMedium"), url("../fonts/FuturaNewMedium.woff2") format("woff2"),
+    url("../fonts/FuturaNewLight.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaNewBookDemi";
+  font-weight: 600;
+  font-style: normal;
+  src: local("FuturaNewBookDemi"), url("../fonts/FuturaNewDemi.woff2") format("woff2"),
+    url("../fonts/FuturaNewDemi.woff") format("woff");
+  font-display: swap;
+}
+
+// FuturaNew
+@font-face {
+  font-family: "GothamPro-Light", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  src: local("GothamPro-Light"), url("../fonts/GothamPro-Light.woff2") format("woff2"),
+    url("../fonts/GothamPro-Light.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GothamPro-Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local("GothamPro-Regular"), url("../fonts/GothamPro-Regular.woff2") format("woff2"),
+    url("../fonts/GothamPro-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GothamPro-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("GothamPro-Medium"), url("../fonts/GothamPro-Medium.woff2") format("woff2"),
+    url("../fonts/GothamPro-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GothamPro-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("GothamPro-Bold"), url("../fonts/GothamPro-Bold.woff2") format("woff2"),
+    url("../fonts/GothamPro-Bold.woff") format("woff");
+  font-display: swap;
+}
+// FuturaNew

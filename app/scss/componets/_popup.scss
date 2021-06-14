@@ -1,0 +1,18 @@
+.popup {
+  background-color: $bg-black;
+  padding-bottom: 60px;
+  &__box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 753px;
+    width: 100%;
+    height: 778px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__play-icon {
+    width: 100px;
+    height: 100px;
+  }
+}

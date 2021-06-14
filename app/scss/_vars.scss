@@ -1,0 +1,50 @@
+// fonts
+%f-l {
+  font-family: "FuturaNewLight", sans-serif;
+  font-weight: 300;
+}
+%f-r {
+  font-family: "FuturaNew-Reg", sans-serif;
+  font-weight: 400;
+}
+%f-m {
+  font-family: "FuturaNewMedium", sans-serif;
+  font-weight: 500;
+}
+%f-b {
+  font-family: "FuturaNewBookDemi", sans-serif;
+  font-weight: 600;
+}
+
+%g-l {
+  font-family: "GothamPro-Light", sans-serif;
+  font-weight: 300;
+}
+%g-r {
+  font-family: "GothamPro-Regular", sans-serif;
+  font-weight: 400;
+}
+%g-m {
+  font-family: "GothamPro-Medium", sans-serif;
+  font-weight: 500;
+}
+%g-b {
+  font-family: "GothamPro-Bold", sans-serif;
+  font-weight: 700;
+}
+// fonts
+// color
+$white: #fff;
+$bg: #f3c166;
+$bg-black: #252525;
+$black: #000;
+$silver: #aaaaaa;
+// color
+// fancybox
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+// fancybox
