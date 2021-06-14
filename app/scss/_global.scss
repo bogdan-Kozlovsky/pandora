@@ -48,3 +48,21 @@ body {
   border-radius: 2px;
   color: $white;
 }
+.scroll-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3c166;
+  position: fixed;
+  right: 30px;
+  bottom: 10px;
+  transform: translateY(-50%);
+  z-index: 999;
+  border: 1px solid $bg-black;
+  opacity: 0;
+  &.show {
+    opacity: 1;
+  }
+}

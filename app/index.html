@@ -22,27 +22,27 @@
               </div>
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#about">
                     About
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#services">
                     Service
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#gallery">
                     Gallery
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#reviews">
                     Reviews
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#contact">
                     Contacts
                   </a>
                 </li>
@@ -79,17 +79,17 @@
               </div>
               <ul class="header__content-social">
                 <li class="header__content-social__item">
-                  <a href="" class="header__content-social__ling">
+                  <a href="#" class="header__content-social__ling">
                     <img class="header__content-social__icons" src="images/icons/facebook.svg" alt="">
                   </a>
                 </li>
                 <li class="header__content-social__item">
-                  <a href="" class="header__content-social__ling">
+                  <a href="#" class="header__content-social__ling">
                     <img class="header__content-social__icons" src="images/icons/instagram.svg" alt="">
                   </a>
                 </li>
                 <li class="header__content-social__item">
-                  <a href="" class="header__content-social__ling">
+                  <a href="#" class="header__content-social__ling">
                     <img class="header__content-social__icons" src="images/icons/youtube.svg" alt="">
                   </a>
                 </li>
@@ -101,10 +101,15 @@
     </div>
   </header>
   <!-- header -->
+  <!-- scroll -->
+  <div class="scroll-btn">
+    <img src="images/icons/strella.svg" alt="">
+  </div>
+  <!-- scroll -->
   <!-- main -->
   <main class="main">
     <!-- about -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="big__container">
         <div class="about__inner">
           <div class="about__decor">
@@ -174,7 +179,7 @@
     </section>
     <!-- description -->
     <!-- shooting -->
-    <section class="shooting">
+    <section class="shooting" id="services">
       <div class="container">
         <h2 class="shooting__title title">
           Shooting process
@@ -264,7 +269,7 @@
     </section>
     <!-- shooting -->
     <!-- studio -->
-    <section class="studio">
+    <section class="studio" id="reviews">
       <div class="container">
         <div class="studio__slider">
           <div class="studio__slider-item" style="background-image: url(images/slider/slider-1.jpg);">
@@ -479,7 +484,7 @@
     </section>
     <!-- description-gallery -->
     <!-- gallery -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="container">
         <h2 class="gallery__subtitle subtitle">
           Gallery
@@ -611,7 +616,7 @@
     </section>
     <!-- slider -->
     <!-- contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="big__container">
         <h3 class="contact__subtitle subtitle">
           contacts
@@ -742,17 +747,17 @@
           </a>
           <ul class="footer__content-social">
             <li class="footer__content-social__item">
-              <a href="" class="footer__content-social__ling">
+              <a class="footer__content-social__ling" href="#">
                 <img class="footer__content-social__icons" src="images/icons/facebook.svg" alt="">
               </a>
             </li>
             <li class="footer__content-social__item">
-              <a href="" class="footer__content-social__ling">
+              <a class="footer__content-social__ling" href="#">
                 <img class="footer__content-social__icons" src="images/icons/instagram.svg" alt="">
               </a>
             </li>
             <li class="footer__content-social__item">
-              <a href="" class="footer__content-social__ling">
+              <a class="footer__content-social__ling" href="#">
                 <img class="header_footer__content__icons" src="images/icons/youtube.svg" alt="">
               </a>
             </li>
@@ -770,16 +775,19 @@
           </form>
         </div>
       </div>
-      <div class="footer__copy">
+    </div>
+    <div class="footer__copy">
+      <div class="container">
         <p class="footer__copy-text">
           Pandora Studio © 2012-2019 All rights reserved
         </p>
         <span class="footer__copy-descr">Сделано совместно с</span>
-        <a class="footer__copy-author" href="https://victordetroy.com/">
+        <a class="footer__copy-author" target="blank" href="https://victordetroy.com/">
           Виктор Гриценко
         </a>
       </div>
     </div>
+
   </footer>
   <!-- footer -->
   <script src="js/main.min.js"></script>
