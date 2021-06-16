@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "aos": "^2.3.4",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gsap": "^3.6.1",

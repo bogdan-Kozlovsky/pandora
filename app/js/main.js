@@ -83,4 +83,7 @@ $(function () {
   gsap.from('.header__map-coordinates', { opacity: 0, duration: 2, delay: .5, y: 25 })
   gsap.from('.header__content-ingo, .header__content-text, .header__content-btn, .menu__item , .header__content-social__item', { opacity: 0, duration: 3, delay: .1, y: 30, ease: 'expo.out', stagger: .2 })
   // аниация
+  AOS.init({
+    disable: 'mobile',
+  });
 });
