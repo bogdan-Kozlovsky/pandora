@@ -48,7 +48,7 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev slick-btn"><img src="images/icons/arrows-left.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next slick-btn"><img src="images/icons/arrows-right.svg" alt=""></button>',
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
   });
   // слайдер
   // плавний скрол
@@ -77,4 +77,10 @@ $(function () {
     $('.burger').toggleClass("active");
   });
   // адаптивий бургер
+
+  // аниация
+  // gsap.from('.menu', { opacity: 0, duration: 2, delay: .1, x: 60 })
+  gsap.from('.header__map-coordinates', { opacity: 0, duration: 2, delay: .5, y: 25 })
+  gsap.from('.header__content-ingo, .header__content-text, .header__content-btn, .menu__item , .header__content-social__item', { opacity: 0, duration: 3, delay: .1, y: 30, ease: 'expo.out', stagger: .2 })
+  // аниация
 });

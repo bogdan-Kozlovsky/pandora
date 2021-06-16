@@ -33,6 +33,7 @@ function scripts() {
     'app/js/main.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+    'node_modules/gsap/dist/gsap.js',
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
