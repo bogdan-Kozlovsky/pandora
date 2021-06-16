@@ -13,17 +13,20 @@
     display: flex;
     align-items: flex-end;
     padding-bottom: 120px;
+    position: relative;
 
     &:last-child {
       padding-bottom: 90px;
     }
     &:nth-child(2) {
       justify-content: flex-end;
-      position: relative;
       .gallery__item-content {
-        position: absolute;
         left: 42%;
-        bottom: 80px;
+      }
+    }
+    &:nth-child(3) {
+      .gallery__item-content {
+        right: 26%;
       }
     }
   }
@@ -32,6 +35,8 @@
     width: 100%;
     margin-bottom: 80px;
     margin-left: -140px;
+    position: absolute;
+    right: 10%;
   }
   &__item-subtitle {
     font-size: 16px;

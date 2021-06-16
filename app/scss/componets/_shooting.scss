@@ -11,9 +11,7 @@
   &__item {
     max-width: 280px;
     width: 100%;
-    & + .shooting__item {
-      margin-left: 64px;
-    }
+    margin: 0 30px;
   }
   &__item-icons {
     width: 96px;
@@ -45,13 +43,14 @@
   &__partners {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
   }
   &__partners-item {
     display: flex;
     flex-direction: column;
     text-align: center;
     & + .shooting__partners-item {
-      margin-left: 110px;
+      margin-left: 20px;
     }
   }
   &__partners-name {

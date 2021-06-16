@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -140,7 +140,7 @@
     </section>
     <!-- about -->
     <!-- description -->
-    <section class="description">
+    <div class="description" id="description">
       <div class="big__container">
         <div class="description__inner">
           <div class="description__left">
@@ -176,7 +176,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- description -->
     <!-- shooting -->
     <section class="shooting" id="services">
@@ -365,7 +365,7 @@
     </section>
     <!-- studio -->
     <!-- information -->
-    <section class="information">
+    <section class="information" id="information">
       <div class="container">
         <div class="information__inner">
           <div class="information__content">
@@ -379,7 +379,7 @@
               Sign up to recieve updates about new photo studios, special events and exclusive content.
             </p>
             <form class="information__form" action="#">
-              <input class="information__input" type="email " required placeholder="Email address">
+              <input class="information__input" type="email" placeholder="Email address">
               <button class="information__btn btn-reset" type="submit">
                 <img class="information__btn-icons" src="images/icons/information__btn-icons.svg" alt="">
               </button>
@@ -391,7 +391,7 @@
     </section>
     <!-- information -->
     <!-- description-gallery -->
-    <section class="description-gallery">
+    <section class="description-gallery" id="description-gallery">
       <div class="container">
         <div class="description-gallery__items">
           <!-- 1 -->
@@ -550,27 +550,39 @@
     </section>
     <!-- gallery -->
     <!-- slider -->
-    <section class="slider">
+    <section class="slider" id="slider">
       <div class="slider__images-box">
         <div class="container">
           <div class="slider__images-inner">
             <div class="slider__images">
-              <img class="slider__avatar" src="images/slider-carts/1.jpg" alt="">
+              <div class="slider__images-box">
+                <img class="slider__avatar" src="images/slider-carts/1.jpg" alt="">
+              </div>
             </div>
             <div class="slider__images">
-              <img class="slider__avatar" src="images/slider-carts/2.jpg" alt="">
+              <div class="slider__images-box">
+                <img class="slider__avatar" src="images/slider-carts/2.jpg" alt="">
+              </div>
             </div>
             <div class="slider__images">
-              <img class="slider__avatar" src="images/slider-carts/3.jpg" alt="">
+              <div class="slider__images-box">
+                <img class="slider__avatar" src="images/slider-carts/3.jpg" alt="">
+              </div>
             </div>
             <div class="slider__images">
-              <img class="slider__avatar" src="images/slider-carts/4.jpg" alt="">
+              <div class="slider__images-box">
+                <img class="slider__avatar" src="images/slider-carts/4.jpg" alt="">
+              </div>
             </div>
             <div class="slider__images">
-              <img class="slider__avatar" src="images/slider-carts/5.jpg" alt="">
+              <div class="slider__images-box">
+                <img class="slider__avatar" src="images/slider-carts/5.jpg" alt="">
+              </div>
             </div>
             <div class="slider__images">
-              <img class="slider__avatar" src="images/slider-carts/4.jpg" alt="">
+              <div class="slider__images-box">
+                <img class="slider__avatar" src="images/slider-carts/6.jpg" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -626,12 +638,14 @@
         </h2>
         <div class="contact__inner">
           <form class="contact__form" action="#">
-            <input class="contact__input" type="text" required placeholder="First Name">
-            <input class="contact__input" type="text" required placeholder="Last Name">
-            <input class="contact__input" type="email" required placeholder="Email">
-            <input class="contact__input" type="tel" required placeholder="Phone Number">
+            <div class="contact__input-box">
+              <input class="contact__input" type="text" placeholder="First Name">
+              <input class="contact__input" type="text" placeholder="Last Name">
+              <input class="contact__input" type="email" required placeholder="Email">
+              <input class="contact__input" type="tel" placeholder="Phone Number">
+            </div>
             <textarea class="contact__textarea" placeholder="Comment"></textarea>
-            <button class="contact__btn btn-reset btn">
+            <button class="contact__btn btn-reset btn" type="submit">
               send
             </button>
           </form>
@@ -653,15 +667,15 @@
     </section>
     <!-- contact -->
     <!-- popup -->
-    <section class="popup">
+    <div class="popup" id="popup">
       <div class="container">
-        <div class="popup__box" style="background-image: url(images/gallery/1.jpg);">
-          <a class="popup__play" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+        <div class="popup__box" style="background-image: url(images/popup-img.jpg);">
+          <a class="popup__play" data-fancybox href="https://www.youtube.com/watch?v=Ffm-DfOTtv8">
             <img class="popup__play-icon" src="images/icons/play.svg" alt="">
           </a>
         </div>
       </div>
-    </section>
+    </div>
     <!-- popup -->
   </main>
   <!-- main -->
@@ -676,27 +690,22 @@
           </h3>
           <ul class="footer__content-list">
             <li class="footer__content-item">
-              <a class="footer__content-link" href="#">
-                Main
-              </a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">
+              <a class="footer__content-link" href="#services">
                 Service
               </a>
             </li>
             <li class="footer__content-item">
-              <a class="footer__content-link" href="#">
+              <a class="footer__content-link" href="#reviews">
                 Reviews
               </a>
             </li>
             <li class="footer__content-item">
-              <a class="footer__content-link" href="#">
+              <a class="footer__content-link" href="#slider">
                 Team
               </a>
             </li>
             <li class="footer__content-item">
-              <a class="footer__content-link" href="#">
+              <a class="footer__content-link" href="#description-gallery">
                 Gallery
               </a>
             </li>
@@ -708,28 +717,23 @@
           </h3>
           <ul class="footer__content-list">
             <li class="footer__content-item">
-              <a class="footer__content-link" href="#">
-                Mail Delivery
+              <a class="footer__content-link" href="#popup">
+                Video
               </a>
             </li>
             <li class="footer__content-item">
-              <a class="footer__content-link" href="#">
+              <a class="footer__content-link" href="#description">
                 Rental Rules
               </a>
             </li>
             <li class="footer__content-item">
-              <a class="footer__content-link" href="#">
-                Jobs
+              <a class="footer__content-link" href="#information">
+                Newslatter
               </a>
             </li>
             <li class="footer__content-item">
-              <a class="footer__content-link" href="#">
-                News
-              </a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">
-                Blog
+              <a class="footer__content-link" href="#contact">
+                Contact
               </a>
             </li>
           </ul>
@@ -768,7 +772,8 @@
             Let’s keep in touch!
           </h3>
           <form class="footer__content__form" action="#">
-            <input class="footer__content__input" type="email " required placeholder="Email address">
+            <input class="footer__content__input" placeholder="Email address" type="email">
+
             <button class="footer__content__btn btn-reset" type="submit">
               <img class="footer__content__btn-icons" src="images/icons/information__btn-icons.svg" alt="">
             </button>

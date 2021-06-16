@@ -1,11 +1,10 @@
 .description-gallery {
   margin-top: -50px;
   background-color: $bg-black;
-  padding-bottom: 215px;
+  padding-bottom: 70px;
   &__items {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
   &__item {
     & + .description-gallery__item {

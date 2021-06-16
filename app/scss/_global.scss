@@ -54,7 +54,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f3c166;
+  background-color: rgba(#f3c166, 0.6);
   position: fixed;
   right: 30px;
   bottom: 10px;
@@ -63,7 +63,53 @@ body {
   border: 1px solid $bg-black;
   opacity: 0;
   cursor: pointer;
+  transition: all 0.6s ease;
   &.show {
     opacity: 1;
+  }
+}
+.burger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 11;
+  display: block;
+  cursor: pointer;
+  display: none;
+  span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.5s ease;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  &.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  &.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  &.active span {
+    transform: scale(0);
   }
 }

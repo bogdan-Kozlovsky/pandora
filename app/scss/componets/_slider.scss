@@ -3,14 +3,11 @@
   padding-bottom: 160px;
   &__images-box {
     background: #292929;
-    height: 308px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   &__images-inner {
     display: flex;
     justify-content: space-between;
+    padding: 90px 0;
   }
   &__images {
     width: 120px;
@@ -20,10 +17,9 @@
   &__avatar {
     width: 120px;
     height: 120px;
-
-    overflow: hidden;
     border-radius: 50%;
-    vertical-align: top;
+    margin-right: auto;
+    margin-left: auto;
   }
   &__content {
     padding-top: 32px;
