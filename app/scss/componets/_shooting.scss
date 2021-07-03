@@ -1,50 +1,61 @@
 .shooting {
   padding: 140px 0 70px 0;
   background-color: $bg-black;
+
   &__title {
     margin-bottom: 60px;
   }
+
   &__items {
     display: flex;
     margin-bottom: 138px;
   }
+
   &__item {
-    max-width: 280px;
-    width: 100%;
     margin: 0 30px;
+    width: 100%;
+    max-width: 280px;
   }
+
   &__item-icons {
+    display: block;
+    margin-bottom: 2px;
     width: 96px;
     height: 102px;
     object-fit: contain;
-    margin-bottom: 2px;
-    display: block;
   }
+
   &__item-title {
+    margin-bottom: 17px;
     font-size: 24px;
     line-height: 29px;
-    margin-bottom: 17px;
     text-transform: uppercase;
   }
+
   &__descr {
     margin-bottom: 40px;
   }
+
   &__descr-subtitle {
     margin-bottom: 21px;
   }
+
   &__descr-text {
-    max-width: 500px;
     width: 100%;
+    max-width: 500px;
   }
+
   &__partners-box {
-    background-color: $bg;
     padding: 58px 0;
+    background-color: $bg;
   }
+
   &__partners {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
   }
+
   &__partners-item {
     display: flex;
     flex-direction: column;
@@ -53,9 +64,10 @@
       margin-left: 20px;
     }
   }
+
   &__partners-name {
-    color: #000;
     display: inline-block;
     margin-top: 12px;
+    color: #000;
   }
 }

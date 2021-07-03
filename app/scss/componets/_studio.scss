@@ -1,12 +1,14 @@
 .studio {
   padding: 70px 0 70px;
   background-color: $bg-black;
+
   &__slider-item {
     width: 373px;
+    height: 603px;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 603px;
   }
+
   &__slider-content {
     margin: 64px 0 0 64px;
   }
@@ -14,39 +16,47 @@
   &__slider-title {
     margin-bottom: 24px;
   }
+
   &__slider-text {
-    width: 373px;
     margin-bottom: 219px;
+    width: 100%;
+    max-width: 373px;
   }
+
   &__slider-btn {
     margin-right: auto;
     margin-left: 0;
   }
+
   .slick-btn {
-    border: none;
-    cursor: pointer;
-    padding: 0;
     position: absolute;
-    top: 50%;
     left: 155px;
+    top: 50%;
+    border: none;
+    padding: 0;
     transform: translateX(-50%);
+    cursor: pointer;
   }
+
   .slick-prev {
     left: 92px;
     z-index: 10;
   }
+
   &__items {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     margin-top: 19px;
   }
+
   &__item {
     margin-right: 30px;
     &:last-child {
       margin-right: 0;
     }
   }
+
   &__item-advantages {
     display: block;
     margin-bottom: 4px;
@@ -55,14 +65,15 @@
     @extend %f-l;
     text-transform: uppercase;
     span {
-      font-size: 25px;
       margin-left: 12px;
+      font-size: 25px;
     }
     sup {
-      top: -6px;
       left: -8px;
+      top: -6px;
     }
   }
+  
   &__item-descr {
     @extend %f-b;
     font-size: 28px;

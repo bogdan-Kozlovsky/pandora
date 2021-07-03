@@ -1,67 +1,77 @@
 .slider {
-  background-color: $bg-black;
   padding-bottom: 160px;
+  background-color: $bg-black;
+
   &__images-box {
     background: #292929;
   }
+
   &__images-inner {
     display: flex;
     justify-content: space-between;
     padding: 90px 0;
   }
+
   &__images {
     width: 120px;
     height: 120px;
     object-fit: cover;
   }
+
   &__avatar {
-    width: 120px;
-    height: 120px;
     border-radius: 50%;
     margin-right: auto;
     margin-left: auto;
+    width: 120px;
+    height: 120px;
   }
+
   &__content {
     padding-top: 32px;
   }
+
   &__content-box {
     text-align: center;
   }
+
   &__content-name {
     margin-bottom: 20px;
     font-size: 24px;
     line-height: 150%;
     letter-spacing: 0.1em;
-    color: $silver;
     text-transform: uppercase;
+    color: $silver;
   }
+
   &__content-descr {
-    max-width: 337px;
-    width: 100%;
-    font-size: 20px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 337px;
+    font-size: 20px;
   }
+
   .slick-btn {
-    border: none;
-    cursor: pointer;
-    padding: 0;
     position: absolute;
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
+
   .slick-prev {
-    top: 20px;
     left: 25%;
+    top: 20px;
     z-index: 10;
   }
+
   .slick-next {
-    top: 20px;
     right: 25%;
+    top: 20px;
   }
+
   .slick-center {
-    -webkit-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    transform: scale(1.25);
     width: 180px;
     height: 180px;
+    transform: scale(1.25);
     transition: all 0.5s;
     .slider__images {
       width: 180px;

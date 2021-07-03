@@ -33,7 +33,6 @@ function scripts() {
     'app/js/main.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
-    'node_modules/gsap/dist/gsap.js',
     'node_modules/aos/dist/aos.js',
   ])
     .pipe(concat('main.min.js'))
@@ -44,15 +43,15 @@ function scripts() {
 function images() {
   return src('app/images/**/*.*')
     .pipe(imagemin([
-      imagemin.gifsicle({ interlaced: true }),
-      imagemin.mozjpeg({ quality: 75, progressive: true }),
-      imagemin.optipng({ optimizationLevel: 5 }),
-      imagemin.svgo({
-        plugins: [
-          { removeViewBox: true },
-          { cleanupIDs: false }
-        ]
-      })
+      // imagemin.gifsicle({ interlaced: true }),
+      // imagemin.mozjpeg({ quality: 75, progressive: true }),
+      // imagemin.optipng({ optimizationLevel: 5 }),
+      // imagemin.svgo({
+      //   plugins: [
+      //     { removeViewBox: true },
+      //     { cleanupIDs: false }
+      //   ]
+      // })
     ]))
     .pipe(dest('dist/images'))
 }

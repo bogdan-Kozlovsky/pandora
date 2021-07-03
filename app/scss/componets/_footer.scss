@@ -1,70 +1,82 @@
 .footer {
   background-color: $bg-black;
+
   &__content-inner {
     display: flex;
     justify-content: space-between;
     padding-bottom: 80px;
   }
+
   &__content-title {
+    margin-bottom: 40px;
     font-size: 32px;
     line-height: 40px;
     @extend %f-b;
-    margin-bottom: 40px;
   }
+
   &__content-item {
     margin-bottom: 8px;
   }
+
   &__content-link {
     font-size: 24px;
     line-height: 150%;
     color: $white;
   }
+
   &__content-email,
   &__content-address,
   &__content-tel {
-    font-size: 18px;
-    margin-bottom: 19px;
-    display: block;
-    color: $white;
     position: relative;
+    display: block;
+    margin-bottom: 19px;
     padding-left: 31px;
+    font-size: 18px;
+    color: $white;
     &::before {
       content: "";
       position: absolute;
-      width: 16px;
-      height: 16px;
       left: 0;
       top: 7px;
+      width: 16px;
+      height: 16px;
     }
   }
+
   &__content-email::before {
     background-image: url(../images/icons/email-icons.svg);
   }
+
   &__content-address::before {
     background-image: url(../images/icons/map-icons.svg);
   }
+
   &__content-tel::before {
     background-image: url(../images/icons/phone-icons.svg);
   }
+
   &__content-social {
     display: flex;
   }
+
   &__content-social__item {
     margin-top: 20px;
     & + .footer__content-social__item {
       margin-left: 24px;
     }
   }
+
   &__content__form {
     position: relative;
   }
+
   &__content__input {
     border: none;
+    border-radius: 2px;
+    padding: 0 70px 0 20px;
     width: 314px;
     height: 52px;
-    border-radius: 2px;
     background: #292929;
-    padding: 0 70px 0 20px;
     &::placeholder {
       @extend %f-r;
       font-size: 16px;
@@ -72,29 +84,34 @@
       color: $silver;
     }
   }
+
   &__content__btn {
     position: absolute;
     right: 25px;
     top: 15px;
   }
+
   &__copy {
-    background: #292929;
     padding: 30px 0;
     text-align: center;
+    background: #292929;
   }
+
   &__copy-text {
+    margin-bottom: 5px;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.1em;
-    margin-bottom: 5px;
     color: $silver;
   }
+
   &__copy-descr {
+    margin-bottom: 5px;
     font-size: 14px;
     line-height: 17px;
-    margin-bottom: 5px;
     color: $silver;
   }
+
   &__copy-author {
     color: $bg;
   }

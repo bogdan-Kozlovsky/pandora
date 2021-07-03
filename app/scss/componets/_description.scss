@@ -1,43 +1,50 @@
 .description {
   padding-top: 64px;
   background-color: $bg-black;
+
   &__inner {
     display: flex;
     align-items: center;
   }
+
   &__left {
     margin-right: 64px;
   }
+
   &__left-text {
+    margin-bottom: 16px;
     font-size: 32px;
     line-height: 100%;
-    margin-bottom: 16px;
     text-align: right;
   }
+
   &__right-box {
     padding-left: 20px;
   }
+
   &__right {
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 1015px;
-    width: 100%;
-    min-height: 573px;
-    background: linear-gradient(90deg, #1a1a1a 0%, rgba(26, 26, 26, 0) 52.51%);
-    border-radius: 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  &__right-text {
-    text-align: left;
-    font-size: 20px;
-    margin-bottom: 24px;
-    max-width: 607px;
+    border-radius: 2px;
     width: 100%;
+    min-height: 573px;
+    max-width: 1015px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg, #1a1a1a 0%, rgba(26, 26, 26, 0) 52.51%);
+  }
+
+  &__right-text {
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 607px;
+    font-size: 20px;
+    text-align: left;
+    text-shadow: 2px 2px 1px #000;
     &:last-child {
-      max-width: 507px;
       width: 100%;
+      max-width: 507px;
     }
   }
 }

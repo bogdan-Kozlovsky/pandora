@@ -1,20 +1,23 @@
 .about {
   padding-top: 64px;
   background-color: $bg-black;
+
   &__container {
-    max-width: 1690px;
     padding: 0 15px;
+    max-width: 1690px;
   }
+
   &__inner {
     display: flex;
   }
+
   &__decor {
-    max-width: 769px;
+    position: relative;
     width: 100%;
     min-height: 300px;
-    // height: 1155px;
-    position: relative;
+    max-width: 769px;
   }
+
   &__decor-img {
     position: absolute;
     left: 0;
@@ -27,22 +30,26 @@
       linear-gradient(180deg, rgba(26, 26, 26, 0.69) -0.92%, rgba(26, 26, 26, 0) 9.04%),
       linear-gradient(179.85deg, rgba(26, 26, 26, 0) 74.72%, #1a1a1a 99.22%), url(ebf33983757493.jpg);
   }
+
   &__content {
     padding: 166px 0 0 88px;
   }
+
   &__content-subtitle {
     margin-bottom: 25px;
   }
+
   &__content-text {
     margin-bottom: 24px;
-    max-width: 453px;
     width: 100%;
+    max-width: 453px;
     font-size: 20px;
   }
+
   &__content-title {
-    max-width: 446px;
-    width: 100%;
-    margin: 101px 0 96px -160px;
     position: relative;
+    margin: 101px 0 96px -160px;
+    width: 100%;
+    max-width: 446px;
   }
 }

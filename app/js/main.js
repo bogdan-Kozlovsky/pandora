@@ -7,10 +7,14 @@ $(function () {
     fade: true,
     prevArrow: '<button type="button" class="slick-prev slick-btn"><img src="images/icons/arrows-left.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next slick-btn"><img src="images/icons/arrows-right.svg" alt=""></button>',
+    autoplay: true,
+    autoplaySpeed: 4000,
   });
   $('.slider__images-inner').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
     arrows: false,
     asNavFor: '.slider__content-inner',
     responsive: [
@@ -79,11 +83,9 @@ $(function () {
   // адаптивий бургер
 
   // аниация
-  // gsap.from('.menu', { opacity: 0, duration: 2, delay: .1, x: 60 })
-  gsap.from('.header__map-coordinates', { opacity: 0, duration: 2, delay: .5, y: 25 })
-  gsap.from('.header__content-ingo, .header__content-text, .header__content-btn, .menu__item , .header__content-social__item', { opacity: 0, duration: 3, delay: .1, y: 30, ease: 'expo.out', stagger: .2 })
-  // аниация
   AOS.init({
     disable: 'mobile',
   });
+  // аниация
+
 });
